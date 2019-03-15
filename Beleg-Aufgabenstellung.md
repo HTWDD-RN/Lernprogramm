@@ -14,29 +14,29 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - neue Lernmodule sollten sich von einem Webserver per Ajax laden lassen
 - die Anzeige sollte sich an verschiedene Anzeigegeräte sinnvoll anpassen
 
-
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
 - nutzen Sie in JS den strikten Modus 
 - der Beleg sollte im aktuellen Firefox oder Google Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
-- entsprechend einer PWA sollte die Anwendung auch offline funktionieren und sich installieren lassen
+- entsprechend einer PWA sollte die Anwendung auf einem Smartphone installieren lassen
 - vermeiden Sie nach Möglichkeit weitere Frameworks wie jquery, Bootstrap etc. und versuchen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern auszunutzen
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium
-- zum Testen Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
+- zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
 - für die grafische Notendarstellung sollte die JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) mit der Notensprache EasyScore genutzt werden
 - das Format der vom Server nachladbaren Fragen ist JSON entsprechend folgendem Fragment (a - Aufgabe für Violinschlüssel, l - Lösungen, die erste ist korrekt ):
 ```
  	var aufg = { 
 	  note: [
-  	  {"a":"C4", "b":"C2", "l":["C","D","E","H"]},
-  	  {"a":"D4", "b":"D2", "l":["D","C","G","F"]},
+  	  {"a":"C4", "l":["C","D","E","H"]},
+  	  {"a":"D4", "l":["D","C","G","F"]},
   ], 
   };
 ```
-- Aufgaben für den Bassschlüssel können durch Transformation der gegebenen Aufgaben um zwei Oktaven nach unten abgeleitet werden
+- Aufgaben für den Bassschlüssel können durch Transformation der gegebenen Aufgaben um zwei Oktaven nach unten abgeleitet werden, praktisch bedeutet das, dass die Aufgabe um den Wert Zwei dekrementiert wird, z.B. C4 -> C2.
 
 
 ## Mögliche Erweiterungen
+- Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
 - Notenbezeichnungen wahlweise deutsch oder englisch
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
 - Auswahl der Fragen zwischen Einzelnoten, Akkorden mit Umkehrungen und Septakkorden mit Umkehrungen
