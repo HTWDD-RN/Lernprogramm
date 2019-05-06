@@ -25,12 +25,16 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - für die grafische Notendarstellung sollte die JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) mit der Notensprache EasyScore genutzt werden
 - das Format der vom Server nachladbaren Fragen ist JSON entsprechend folgendem Fragment (a - Aufgabe für Violinschlüssel, l - Lösungen, die erste ist korrekt ):
 ```
- 	var aufg = { 
-	  note: [
-  	  {"a":"C4", "l":["C","D","E","H"]},
-  	  {"a":"D4", "l":["D","C","G","F"]},
-  ], 
-  };
+{ 
+  "note": [
+    {"a":"C4", "l":["C","D","E","H"]},
+    {"a":"D4", "l":["D","C","G","F"]},
+    ],     
+  "akkord3": [
+    {"a": "(C4 E4 G4)", "l": ["C", "H", "F", "D"]},
+    {"a": "(C4 E4 G3)", "l": ["C", "G", "E", "D"]},
+    ]  
+}
 ```
 - Aufgaben für den Bassschlüssel können durch Transformation der gegebenen Aufgaben um zwei Oktaven nach unten abgeleitet werden, praktisch bedeutet das, dass die Aufgabe um den Wert Zwei dekrementiert wird, z.B. C4 -> C2.
 
