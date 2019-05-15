@@ -37,6 +37,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 }
 ```
 - Aufgaben für den Bassschlüssel können durch Transformation der gegebenen Aufgaben um zwei Oktaven nach unten abgeleitet werden, praktisch bedeutet das, dass die Aufgabe um den Wert Zwei dekrementiert wird, z.B. C4 -> C2.
+- vom Server http://idefix.informatik.htw-dresden.de/it1/beleg/ können die Beispielaufgaben noten-aufgaben.js geladen werden (Zugriff nur innerhalb des HTW-Netzes möglich). 
 
 
 ## Mögliche Erweiterungen
