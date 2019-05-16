@@ -28,11 +28,11 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 { 
   "note": [
     {"a":"C4", "l":["C","D","E","H"]},
-    {"a":"D4", "l":["D","C","G","F"]},
-    ],     
+    {"a":"D4", "l":["D","C","G","F"]}
+    ]
   "akkord3": [
     {"a": "(C4 E4 G4)", "l": ["C", "H", "F", "D"]},
-    {"a": "(C4 E4 G3)", "l": ["C", "G", "E", "D"]},
+    {"a": "(C4 E4 G3)", "l": ["C", "G", "E", "D"]}
     ]  
 }
 ```
