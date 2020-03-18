@@ -1,5 +1,5 @@
 
-# Notenlernprogramm
+# Lernprogramm
 Beleg webbasiertes Lernprogramm 
   
 Die Aufgabenstellung besteht aus den Teilen (die Github-Nutzung ist für diesen Beleg freiwillig):
