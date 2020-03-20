@@ -9,10 +9,9 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts
-- Wahl zwischen verschiedenen Aufgabenkategorien
+- Wahl zwischen verschiedenen Aufgabenkategorien (Mathematik, Allgemein)
 - Anzeige einer Statistik am Ende eines Durchlaufs
-- neue Lernmodule sollten sich von einem Webserver per Ajax laden lassen
-- die Anzeige sollte sich an verschiedene Anzeigegeräte sinnvoll anpassen
+- die Anzeige sollte sich an verschiedene Anzeigegeräte (Browser des PCs, Smartphone) sinnvoll anpassen
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
@@ -38,7 +37,17 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ```
 
 
-## Mögliche Erweiterungen
+## Mögliche Erweiterungen (optional)
+- neue Lernmodule sollten sich von einem Webserver per Ajax laden lassen
 - vom Server http://idefix.informatik.htw-dresden.de/it1/beleg/ können die Beispielaufgaben mathe-aufgaben.js geladen werden (Zugriff nur innerhalb des HTW-Netzes möglich). 
 - Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
+
+## Prinzipdarstellung
+
+Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone aussehen könnte, ist nachfolgend eine Demoversion zu sehen.
+Die HTML-Elemente wurden für den kleinen Viewport mittels CSS-Mediaqueries untereinander dargestellt. Auf einem Desktopbrowser würde die Darstellung teilweise nebeneinander erfolgen. Die Darstellung dient nur zur Orientierung. Sie können eine abweichende Oberfläche erstellen.
+Der Screenshot würde mit den Entwicklertools des Browsers erstellt.
+
+![GitHub-Workflow](/images/demo.png)
+<!---  <img src="images/demo.png" width="100">   --->
