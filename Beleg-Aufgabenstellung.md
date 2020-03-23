@@ -9,7 +9,7 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts
-- Wahl zwischen verschiedenen Aufgabenkategorien (Mathematik, Allgemein)
+- Wahl zwischen mindestens 2 verschiedenen Aufgabenkategorien (Kategorien Mathematik und Allgemein sind Pflicht)
 - Anzeige einer Statistik am Ende eines Durchlaufs
 - die Anzeige sollte sich an verschiedene Anzeigegeräte (Browser des PCs, Smartphone) sinnvoll anpassen
 
@@ -18,7 +18,8 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - nutzen Sie in JS den strikten Modus 
 - der Beleg sollte im aktuellen Firefox oder Google Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
 - entsprechend einer PWA sollte die Anwendung auf einem Smartphone installieren lassen
-- vermeiden Sie nach Möglichkeit weitere Frameworks wie jquery, Bootstrap etc. und versuchen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern auszunutzen
+- normalerweise benötigt man in einer PWA einen Service Worker zur Steuerung des Caches, in diesem Beleg können Sie den Service Worker aber weglassen, die App lässt sich trotzem installieren
+- verwenden Sie **keine** weiteren Frameworks wie jquery, Bootstrap etc., sondern nutzen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
 - für die grafische Formeldarstellung (Rendering) sollte die JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX) genutzt werden, siehe [Beispiel](mathe-demo.html)
