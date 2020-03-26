@@ -72,5 +72,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 
+
+<script>
+    // Service Worker registrieren für PWA
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('scripts/sw.js')
+				.then(reg => console.log(reg))
+				.catch(err => console.log(err));
+		}
+</script>
+
+
 </body>
 </html>
