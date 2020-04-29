@@ -40,7 +40,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 
 ## Mögliche Erweiterungen (optional)
 - neue Lernmodule sollten sich von einem Webserver per Ajax laden lassen
-- vom Server http://idefix.informatik.htw-dresden.de/it1/beleg/ können die Beispielaufgaben quizz-aufgaben.js geladen werden (Zugriff nur innerhalb des HTW-Netzes möglich). 
+- vom Server http://idefix.informatik.htw-dresden.de/it1/beleg/ können die Beispielaufgaben [quizz-aufgaben.js](http://idefix.informatik.htw-dresden.de/it1/beleg/quizz-aufgaben.js) geladen werden (Zugriff nur innerhalb des HTW-Netzes möglich). 
 - Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
 
