@@ -7,11 +7,13 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
+- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht)
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts
-- Wahl zwischen mindestens 2 verschiedenen Aufgabenkategorien (Kategorien Mathematik und Allgemein sind Pflicht)
 - Anzeige einer Statistik am Ende eines Durchlaufs
-- die Anzeige sollte sich an verschiedene Anzeigegeräte (Browser des PCs, Smartphone) sinnvoll anpassen
+- die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen
+- Nachladen von weiteren Aufgaben per Ajax von einem Server mittels REST-Schnittstelle (Details werden noch definiert)
+
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
@@ -30,6 +32,11 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
     {"a":"x^2+x^2", "l":["2x^2","x^4","x^8","2x^4"]},
     {"a":"x^2*x^2", "l":["x^4","x^2","2x^2","4x"]}
     ]
+  "teil-internettechnologien": [
+    {"a":"Welche Authentifizierung bietet HTTP", "l":["Digest Access Authentication","OTP","OAuth","2-Faktor-Authentifizierung"]},
+    {"a":"Welches Transportprotokoll eignet sich für zeitkritische Übertragungen", "l":["UDP","TCP","HTTP","Fast Retransmit"]},
+   ...
+    ]  
   "teil-allgemein": [
     {"a":"Karl der Große, Geburtsjahr", "l":["747","828","650","1150"]},
    ...
@@ -39,10 +46,14 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 
 
 ## Mögliche Erweiterungen (optional)
-- neue Lernmodule sollten sich von einem Webserver per Ajax laden lassen
-- vom Server http://idefix.informatik.htw-dresden.de/it1/beleg/ können die Beispielaufgaben [quizz-aufgaben.js](http://idefix.informatik.htw-dresden.de/it1/beleg/quizz-aufgaben.js) geladen werden (Zugriff nur innerhalb des HTW-Netzes möglich). 
 - Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
+- Erweiterung auf mögliche Mehrfachauswahl
+
+
+## weitere Anforderungen
+- machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
+
 
 ## Prinzipdarstellung
 Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone aussehen könnte, ist nachfolgend eine Demoversion zu sehen.
