@@ -61,6 +61,10 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ## weitere Anforderungen
 - machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
 
+## Links
+[reines Javascript](https://htmldom.dev/)
+[Fehlersuche](stackoverflow.com)
+
 
 ## Prinzipdarstellung
 Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone aussehen könnte, ist nachfolgend eine Demoversion zu sehen.
