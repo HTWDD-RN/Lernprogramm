@@ -62,8 +62,8 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
 
 ## Links
-[reines Javascript](https://htmldom.dev/)
-[Fehlersuche](stackoverflow.com)
+- [reines Javascript](https://htmldom.dev/)
+- [Fehlersuche](stackoverflow.com)
 
 
 ## Prinzipdarstellung
