@@ -63,7 +63,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 
 ## Links
 - [reines Javascript](https://htmldom.dev/)
-- [Fehlersuche](stackoverflow.com)
+- [Fehlersuche](https://stackoverflow.com)
 
 
 ## Prinzipdarstellung
