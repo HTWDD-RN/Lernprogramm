@@ -47,7 +47,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ## REST-Schnittstelle
 - Es soll die Möglichkeit bestehen, weitere Aufgaben von einem externen Server mittels REST zu laden.
 - genutzt wird das Projekt [Web-Quiz](https://github.com/swsms/web-quiz-engine)
-- die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben
+- die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/a7TXsuRBDxjT8ov7M)
 - per AJAX-Request muss lediglich eine Aufgabe geholt werden und das Ergebnis überprüft werden
 - alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
 
