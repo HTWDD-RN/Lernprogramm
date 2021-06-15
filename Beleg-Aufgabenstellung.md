@@ -13,7 +13,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Anzeige einer Statistik am Ende eines Durchlaufs
 - die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen
 - Nachladen von weiteren Aufgaben per Ajax von einem Server mittels REST-Schnittstelle, siehe unten.
-
+- der Beleg soll auf dem Webserver der HTW-Dresden abrufbar sein, Pfad: ~sxxxxx/Lernprogramm
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
