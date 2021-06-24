@@ -58,6 +58,18 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Erweiterung auf mögliche Mehrfachauswahl
 
 
+## Vorschlag für Vorgehen bei der Bearbeitung
+- Erstellung des HTML-Gerüstes mit allen Elementen
+- Nutzung von CSS zur Gestaltung + Responsive Design
+- Erstellung der Javascript-Programmstruktur (Architektur Model-View-Presenter)
+- Implementierung einer geeigneten Model-Schnittstelle zum Erhalt der Aufgabe und zur Übergabe der gewählten Lösung (zunächst mit einfacher Dummy-Frage)
+- Implementierung der Button-Handler, welche die Auswertefunktion des Presenters aktivieren
+- Erweiterung des Models auf verschiedene Aufgaben mit Zufallsfunktion
+- Implementierung der Statistikfunktionalität
+- Erweiterung der Anzeige auf andere Aufgabentypen (Mathe -> Katex, etc.)
+- Erweiterung des Models um die Nutzung der angebotenen REST-Schnittstelle
+- bei Bedarf Offlinefunktionalität implementieren
+
 ## weitere Anforderungen
 - machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
 
