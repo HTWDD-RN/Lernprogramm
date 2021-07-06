@@ -51,13 +51,6 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - per AJAX-Request muss lediglich eine Aufgabe geholt werden und das Ergebnis überprüft werden
 - alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
 
-
-## Mögliche Erweiterungen (optional)
-- Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
-- Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
-- Erweiterung auf mögliche Mehrfachauswahl
-
-
 ## Vorschlag für Vorgehen bei der Bearbeitung
 - Erstellung des HTML-Gerüstes mit allen Elementen
 - Nutzung von CSS zur Gestaltung + Responsive Design
@@ -70,10 +63,16 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Erweiterung des Models um die Nutzung der angebotenen REST-Schnittstelle
 - bei Bedarf Offlinefunktionalität implementieren
 
-## weitere Anforderungen
+## Weitere Anforderungen
 - Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
 - Dokumentation des Projektes
 - machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
+
+## Mögliche Erweiterungen (optional)
+- Erweiterung um einen Service-Worker zum Cachehandling um die Anwendung auch offline nutzbar zu machen
+- Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
+- Erweiterung auf mögliche Mehrfachauswahl
+
 
 ## Links
 - [reines Javascript](https://htmldom.dev/)
