@@ -71,6 +71,8 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - bei Bedarf Offlinefunktionalität implementieren
 
 ## weitere Anforderungen
+- Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
+- Dokumentation des Projektes
 - machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
 
 ## Links
