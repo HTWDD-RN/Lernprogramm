@@ -4,6 +4,17 @@
 Als Beispiel für eine Progressive Web App (PWA) soll ein webbasiertes Programm zur Überprüfung allgemeiner bzw. Mathematikkenntnisse erstellt werden.
 Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javascript. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
 
+## Lernaspekte
+- Nutzung von HTTP/HTTPS
+- Einsatz von HTML zur Strukturierung
+- Einsatz von CSS zur Formatierung 
+- Webprogrammierung mittels Javascript, Wahl einer geeigneten Softwarearchitektur 
+- Nutzung einer JS-Bibliothek zur Darstellung von Inhalten
+- Entwurf und Implementierung eines sinnvollen Nutzerinterfaces
+- Implementierung eines responsive Designs
+- Technik einer PWA
+- dynamisches Nachladen von Inhalten mittels Ajax-Technik
+- Nutzung einer REST-Schnittstelle 
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
@@ -47,7 +58,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ## REST-Schnittstelle
 - Es soll die Möglichkeit bestehen, weitere Aufgaben von einem externen Server mittels REST zu laden.
 - genutzt wird das Projekt [Web-Quiz](https://github.com/swsms/web-quiz-engine)
-- die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/a7TXsuRBDxjT8ov7M)
+- die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/internettechnologien1)
 - per AJAX-Request muss lediglich eine Aufgabe geholt werden und das Ergebnis überprüft werden
 - alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
 
