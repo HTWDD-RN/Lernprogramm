@@ -18,7 +18,7 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht)
+- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht), optional kann statt Mathematik auch Notenlernen gewählt werden (Einzelnoten / Akkorde / Umkehrungen ganz nach Belieben).
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts
 - Anzeige einer Statistik am Ende eines Durchlaufs
@@ -36,6 +36,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
 - für die grafische Formeldarstellung (Rendering) sollte die JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX) genutzt werden, siehe [Beispiel](mathe-demo.html)
+- für die grafische Notendarstellung sollte die JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) mit der Notensprache EasyScore genutzt werden
 - das Format der Fragen ist JSON entsprechend folgendem Fragment (a - Aufgabe, l - Lösungen, die erste ist korrekt ):
 ```
 { 
@@ -51,7 +52,12 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
   "teil-allgemein": [
     {"a":"Karl der Große, Geburtsjahr", "l":["747","828","650","1150"]},
    ...
-    ]  
+    ]
+  "teil-noten": [
+    {"a":"C4", "l":["C","D","E","H"]},
+    {"a":"(C4 E4 G4)", "l": ["C", "H", "F", "D"]},
+   ...
+    ]       
 }
 ```
 
