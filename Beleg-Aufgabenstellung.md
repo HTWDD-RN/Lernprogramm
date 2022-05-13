@@ -31,7 +31,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - nutzen Sie in JS den strikten Modus 
 - der Beleg sollte im aktuellen Firefox oder Google Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
 - entsprechend einer PWA sollte die Anwendung auf einem Smartphone installieren lassen
-- normalerweise benötigt man in einer PWA einen Service Worker zur Steuerung des Caches für den Offline-Betrieb, in diesem Beleg können Sie den Service Worker weglassen, oder Sie nutzen die bereitgestellte minimale Variante in [Beispiel](mathe-demo.html).
+- man benötigt in einer PWA einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation, nutzen die bereitgestellte minimale Variante in [Beispiel](mathe-demo.html).
 - verwenden Sie **keine** weiteren Frameworks wie jquery, Bootstrap etc., sondern nutzen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
