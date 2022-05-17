@@ -67,6 +67,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/internettechnologien1)
 - per AJAX-Request muss lediglich eine Aufgabe geholt werden und das Ergebnis überprüft werden
 - alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
+- befüllen Sie die Datenbank am besten per Script, so können Sie Ihre Daten auch im Falle eines Problems schnell wieder auffüllen.
 
 ## Vorschlag für Vorgehen bei der Bearbeitung
 - Erstellung des HTML-Gerüstes mit allen Elementen
