@@ -25,6 +25,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen
 - Nachladen von weiteren Aufgaben per Ajax von einem Server mittels REST-Schnittstelle, siehe unten.
 - der Beleg soll auf dem Webserver der HTW-Dresden abrufbar sein, Pfad: ~sxxxxx/Lernprogramm
+- Abgabe entsprechend [Abgabeformat](https://github.com/HTWDD-RN/Lernprogramm/blob/Beleg-2021/Beleg-Abgabeformat.md)
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
