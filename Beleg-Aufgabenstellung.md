@@ -1,28 +1,30 @@
 # Beleg webbasiertes Lernprogramm
 
 ## Übersicht
-Als Beispiel für eine Progressive Web App (PWA) soll ein webbasiertes Programm zur Überprüfung allgemeiner bzw. Mathematikkenntnisse erstellt werden.
+Es soll ein webbasiertes Lernprogramm erstellt werden. Als Fundament nutzen wir die Technik der Progressive Web App (PWA).
 Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javascript. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
 
 ## Lernaspekte
 - Nutzung von HTTP/HTTPS
 - Einsatz von HTML zur Strukturierung
 - Einsatz von CSS zur Formatierung 
-- Webprogrammierung mittels Javascript, Wahl einer geeigneten Softwarearchitektur 
-- Nutzung einer JS-Bibliothek zur Darstellung von Inhalten
+- Webprogrammierung mittels Javascript (ECMAScript)
+- Wahl einer geeigneten Softwarearchitektur 
+- Nutzung einer JS-Bibliothek zur Darstellung von speziellen Inhalten
 - Entwurf und Implementierung eines sinnvollen Nutzerinterfaces
 - Implementierung eines responsive Designs
-- Technik einer PWA
+- Nutzung der Technik einer PWA
 - dynamisches Nachladen von Inhalten mittels Ajax-Technik
 - Nutzung einer REST-Schnittstelle 
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht), optional kann statt Mathematik auch Notenlernen gewählt werden (Einzelnoten / Akkorde / Umkehrungen ganz nach Belieben).
+- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht)
+- Für die Note 1 ist zusätzlich die Katagorie Notenlernen vorzusehen (Einzelnoten / Akkorde / Umkehrungen ganz nach Belieben / Klaviatur).
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
-- Anzeige des Lernfortschritts
+- Anzeige des Lernfortschritts nach jeder Aufgabe
 - Anzeige einer Statistik am Ende eines Durchlaufs
-- die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen
+- die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen (responsive Design)
 - Nachladen von weiteren Aufgaben per Ajax von einem Server mittels REST-Schnittstelle, siehe unten.
 - der Beleg soll auf dem Webserver der HTW-Dresden abrufbar sein, Pfad: ~sxxxxx/Lernprogramm
 - Abgabe entsprechend [Abgabeformat](https://github.com/HTWDD-RN/Lernprogramm/blob/Beleg-2021/Beleg-Abgabeformat.md)
@@ -31,10 +33,10 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
 - nutzen Sie in JS den strikten Modus 
 - der Beleg sollte im aktuellen Firefox oder Google Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
-- entsprechend einer PWA sollte die Anwendung auf einem Smartphone installieren lassen
-- man benötigt in einer PWA ein Manifest und einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation, nutzen die bereitgestellte minimale Variante in [Beispiel](mathe-demo.html).
+- entsprechend einer PWA sollte sich die Anwendung auf einem Smartphone installieren lassen
+- man benötigt in einer PWA ein Manifest und einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation
 - verwenden Sie **keine** weiteren Frameworks wie jquery, Bootstrap etc., sondern nutzen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern
-- Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium
+- Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium oder Firefox
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
 - für die grafische Formeldarstellung (Rendering) sollte die JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX) genutzt werden, siehe [Beispiel](mathe-demo.html)
 - für die grafische Notendarstellung sollte die JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) mit der Notensprache EasyScore genutzt werden
@@ -80,12 +82,12 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Implementierung der Statistikfunktionalität
 - Erweiterung der Anzeige auf andere Aufgabentypen (Mathe -> Katex, etc.)
 - Erweiterung des Models um die Nutzung der angebotenen REST-Schnittstelle
-- bei Bedarf Offlinefunktionalität implementieren
+- Offlinefunktionalität implementieren (minimaler Serviceworker in [Beispiel](mathe-demo.html))
 
 ## Weitere Anforderungen
-- Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
 - Dokumentation des Projektes
-- machen Sie sinnvolle Vorschläge zur Erweiterung/Verbesserung des Belegs
+- Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
+- machen Sie Vorschläge zur Erweiterung/Verbesserung des Belegs
 
 ## Mögliche Erweiterungen (optional)
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
@@ -100,7 +102,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ## Prinzipdarstellung
 Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone aussehen könnte, ist nachfolgend eine Demoversion zu sehen.
 Die HTML-Elemente wurden für den kleinen Viewport mittels CSS-Mediaqueries untereinander dargestellt. Auf einem Desktopbrowser würde die Darstellung teilweise nebeneinander erfolgen. Die Darstellung dient nur zur Orientierung. Sie können eine abweichende Oberfläche erstellen.
-Der Screenshot würde mit den Entwicklertools des Browsers erstellt.
+Der Screenshot wurde mit den Entwicklertools des Browsers erstellt.
 
-![GitHub-Workflow](/images/demo.png)
+![GitHub-Workflow](/images/demo.png =200x)
 <!---  <img src="images/demo.png" width="100">   --->
