@@ -104,5 +104,4 @@ Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone ausseh
 Die HTML-Elemente wurden für den kleinen Viewport mittels CSS-Mediaqueries untereinander dargestellt. Auf einem Desktopbrowser würde die Darstellung teilweise nebeneinander erfolgen. Die Darstellung dient nur zur Orientierung. Sie können eine abweichende Oberfläche erstellen.
 Der Screenshot wurde mit den Entwicklertools des Browsers erstellt.
 
-![GitHub-Workflow](/images/demo.png =200x)
-<!---  <img src="images/demo.png" width="100">   --->
+<img src="images/demo.png" width="100">
