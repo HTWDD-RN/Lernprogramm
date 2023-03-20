@@ -19,8 +19,7 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen mindestens 3 verschiedenen Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und Allgemein sind Pflicht)
-- Für die Note 1 ist zusätzlich die Katagorie Notenlernen vorzusehen (Einzelnoten / Akkorde / Umkehrungen ganz nach Belieben / Klaviatur).
+- Wahl zwischen mindestens 3 verschiedenen lokal gespeicherten Aufgabenkategorien (Kategorien Mathematik, Internettechnologien und allgemeines Wissen sind Pflicht) sowie einer Aufgabenkatagorie, bei welcher die einzelnen Aufgaben von einem externen Server mittels REST-API geholt werden.
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts nach jeder Aufgabe
 - Anzeige einer Statistik am Ende eines Durchlaufs
@@ -64,11 +63,11 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 }
 ```
 
-## REST-Schnittstelle
+## REST-Schnittstelle des externen Aufgabenservers
 - Es soll die Möglichkeit bestehen, weitere Aufgaben von einem externen Server mittels REST zu laden.
-- genutzt wird das Projekt [Web-Quiz](https://github.com/swsms/web-quiz-engine)
+- genutzt wird das Projekt [Web-Quiz](https://github.com/swsms/web-quiz-engine) mit der entsprechenden API für das Holen der Aufgabe und die Überprüfung der Lösung.
 - die Eckdaten des zu nutzenden Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/internettechnologien1)
-- per AJAX-Request muss lediglich eine Aufgabe geholt werden und das Ergebnis überprüft werden
+- per AJAX-Request muss lediglich die Aufgabe geholt werden und das Ergebnis überprüft werden
 - alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
 - befüllen Sie die Datenbank am besten per Script, so können Sie Ihre Daten auch im Falle eines Problems schnell wieder auffüllen.
 
@@ -89,10 +88,12 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
 - machen Sie Vorschläge zur Erweiterung/Verbesserung des Belegs
 
-## Mögliche Erweiterungen (optional)
+## Mögliche Erweiterungen (optional, Zusatzpunkte möglich)
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
 - Erweiterung auf mögliche Mehrfachauswahl
-
+- zusätzliche Katagorie Notenlernen vorsehen (Einzelnoten / Akkorde / Umkehrungen ganz nach Belieben / Klaviatur).
+- Speicherung der erreichten Punkte im Browserspeicher oder per PHP-Script auf dem Server
+- Mehrnutzerbetrieb mit Nutzerauthentifizierung 
 
 ## Links
 - [reines Javascript](https://htmldom.dev/)
@@ -104,4 +105,4 @@ Um einen Eindruck zu vermitteln, wie die Darstellung auf einem Smartphone ausseh
 Die HTML-Elemente wurden für den kleinen Viewport mittels CSS-Mediaqueries untereinander dargestellt. Auf einem Desktopbrowser würde die Darstellung teilweise nebeneinander erfolgen. Die Darstellung dient nur zur Orientierung. Sie können eine abweichende Oberfläche erstellen.
 Der Screenshot wurde mit den Entwicklertools des Browsers erstellt.
 
-<img src="images/demo.png" width="100">
+<img src="images/demo.png" width="200">
