@@ -20,7 +20,7 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen mindestens 3 verschiedenen lokal gespeicherten Aufgabenkategorien (Mathematik, Internettechnologien und allgemeines Wissen sind Pflicht) sowie einer Aufgabenkatagorie, bei welcher die einzelnen Aufgaben von einem externen Server mittels Ajax und REST-API geholt werden. 
+- Wahl zwischen mindestens 3 verschiedenen lokal gespeicherten Aufgabenkategorien (Mathematik, Internettechnologien und allgemeines Wissen sind Pflicht) sowie einer Aufgabenkatagorie, bei welcher die einzelnen Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers) geholt werden. 
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
 - Anzeige des Lernfortschritts nach jeder Aufgabe
 - Anzeige einer Statistik am Ende eines Durchlaufs
