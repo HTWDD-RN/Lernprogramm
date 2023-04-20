@@ -1,0 +1,47 @@
+/*Formatierung für den body
+Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
+* {
+    /*
+        margin: 0;
+        padding: 0;
+    */
+}
+
+body {
+    background-color: lightgrey;
+    height: 100vh;
+
+}
+
+header {
+    background: #000000 url(bilder/dresden.jpg) no-repeat left top;
+}
+
+aside {
+    background: yellowgreen;
+}
+
+nav {
+    background: SkyBlue;
+}
+
+main {
+    background: LightYellow;
+}
+
+footer {
+    background: Wheat;
+    text-align: center
+}
+
+
+header, main, nav, aside, footer {
+    margin: 0.25em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+
+
+
