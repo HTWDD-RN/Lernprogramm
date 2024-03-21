@@ -1,10 +1,10 @@
 # Beleg webbasiertes Lernprogramm
 
 ## Übersicht
-Es soll ein webbasiertes Lernprogramm erstellt werden. Als Fundament nutzen wir die Technik der Progressive Web App (PWA).
-Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javascript. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
+Wesentliche Aufgabe des Belegs ist die Erstellung eines  webbasierten Lernprogramms. Als Fundament nutzen wir die Technik der Progressive Web App (PWA).
+Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascript sowie einer Server-API. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
 
-## Lernaspekte
+## Lernaspekte des Beleges
 - Nutzung von HTTP/HTTPS
 - Einsatz von HTML zur Strukturierung
 - Einsatz von CSS zur Formatierung 
@@ -12,21 +12,23 @@ Der Beleg dient zur praktischen Anwendung der Kenntnisse zu HTML, CSS und Javasc
 - Wahl einer geeigneten Softwarearchitektur 
 - Nutzung einer JS-Bibliothek zur Darstellung von speziellen Inhalten
 - Entwurf und Implementierung eines sinnvollen Nutzerinterfaces
-- Implementierung eines responsive Designs
+- Implementierung eines responsive Designs für unterschiedliche Geräte/Bildschirmgrößen
 - Nutzung der Technik einer PWA
 - Offline-Nutzung einer Webapp
 - dynamisches Nachladen von Inhalten mittels Ajax-Technik
-- Nutzung einer REST-Schnittstelle 
+- Datenübertragung mittels JSON-Format
+- Nutzung einer REST-Schnittstelle mit vorgegebener API
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen mindestens 3 verschiedenen lokal gespeicherten Aufgabenkategorien (Mathematik, Internettechnologien und allgemeines Wissen sind Pflicht) sowie einer Aufgabenkatagorie, bei welcher die einzelnen Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers) geholt werden. 
-- zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
-- Anzeige des Lernfortschritts nach jeder Aufgabe
+- Wahl zwischen mindestens 3 verschiedenen lokal gespeicherten Aufgabenkategorien (Mathematik, Internettechnologien und allgemeines Wissen sind Pflicht)
+- eine Aufgabenkatagorie, bei welcher die einzelnen Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers) geholt werden
+- zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten (zufällig zusammengestellt)
+- Anzeige des Lernfortschritts nach jeder Aufgabe mittels Progressbar
 - Anzeige einer Statistik am Ende eines Durchlaufs
 - die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen (responsive Design)
-- der Beleg soll auf dem Webserver der HTW-Dresden abrufbar sein, Pfad: ~sxxxxx/Lernprogramm
-- Abgabe entsprechend [Abgabeformat](https://github.com/HTWDD-RN/Lernprogramm/blob/Beleg-2021/Beleg-Abgabeformat.md)
+- der Beleg soll auf dem Webserver der HTW-Dresden bzw. der Fakultät Informatik abrufbar sein, Pfad: ~sxxxxx/Lernprogramm
+- Die Abgabe des Beleges erfolgt entsprechend [Abgabeformat](Beleg-Abgabeformat.md)
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
@@ -39,7 +41,7 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
 - für die grafische Formeldarstellung (Rendering) sollte die JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX) genutzt werden, siehe [Beispiel](mathe-demo.html)
 - für die grafische Notendarstellung sollte die JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) mit der Notensprache EasyScore genutzt werden
-- das Format der Fragen ist JSON entsprechend folgendem Fragment (a - Aufgabe, l - Antworten, die erste ist immer korrekt, bei der Anzeige sind die Antworten sinnvollerweise zu verwürfeln ;-) ):
+- die Fragen der einzelnen Kategorien sind im JSON-Format abzulegen, nachfolgend ein Beispiel (a - Aufgabe, l - Antworten, die erste ist immer korrekt, bei der Anzeige sind die Antworten sinnvollerweise zu verwürfeln ;-) ):
 ```
 { 
   "teil-mathe": [
@@ -66,11 +68,12 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 ## REST-Schnittstelle des externen Aufgabenservers
 - Es soll im Beleg die Möglichkeit bestehen, weitere Aufgaben von einem externen Server mittels REST zu laden.
 - genutzt wird das Projekt [Web-Quiz](https://github.com/swsms/web-quiz-engine) mit der entsprechenden API für das Holen der Aufgabe und die Überprüfung der Lösung.
-- Das Web-Quiz-Projekt ist auf einem Server der Informatik gehostet. Die Eckdaten dieses Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/internettechnologien1)
+- Das Web-Quiz-Projekt ist bereits fertig auf einem Server der Informatik gehostet. Die Eckdaten dieses Servers werden in der Lehrveranstaltung bekannt gegeben bzw. finden Sie im [Chat](https://imessage.informatik.htw-dresden.de/channel/internettechnologien1)
 - Es sind bereits Aufgaben vorhanden, welche Sie nutzen können (ID 2-33).
 - Sie sollten mit Ihrem eigenen Account auch einige Aufgaben hochladen.
 - per AJAX-Request muss lediglich die Aufgabe geholt werden und das Ergebnis überprüft werden, alle anderen notwendigen Aufgaben (Nutzer + Aufgaben anlegen) können außerhalb des Lernprogramms per CURL erledigt werden
 - Befüllen Sie die Datenbank am besten per Script, so können Sie Ihre Daten auch im Falle eines Problems schnell wieder auffüllen.
+
 
 ## Vorschlag für Vorgehen bei der Bearbeitung
 - Erstellung des HTML-Gerüstes mit allen Elementen
@@ -84,9 +87,12 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Erweiterung des Models um die Nutzung der angebotenen REST-Schnittstelle
 - Offlinefunktionalität implementieren (minimaler Serviceworker in [Beispiel](mathe-demo.html))
 
+
 ## Weitere Anforderungen
+- falls Sie ChatGPT u.ä. nutzen, müssen Sie dies dokumentieren und den erstellten Code erklären können
 - Dokumentation des Projektes, so dass eine andere Person ggf. am Projekt weiterarbeiten könnte
-- Erstellung eines Lernportfolios (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
+- Legen Sie eine Datei README.md an mit relevanten Informationen zum Beleg: z.B. genutzter Browser, eventuelle Probleme
+- es wird empfohlen, ein Lernportfolio zu erstellen (Dokumentation Ihrer Entwicklungsschritte, des Lernfortschritts, der Misserfolge, etc.)
 - machen Sie Vorschläge zur Erweiterung/Verbesserung des Belegs
 
 ## Mögliche Erweiterungen (optional, Zusatzpunkte möglich)
@@ -96,11 +102,17 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Speicherung der erreichten Punkte im Browserspeicher oder per PHP-Script auf dem Server
 - Mehrnutzerbetrieb mit Nutzerauthentifizierung 
 
+## Bewertungshinweise
+- eine grobe Orientierung für die Bewertung ist:
+  - Note 4: Programm funktioniert lt. Anforderung mit internen Aufgaben
+  - Note 3: zzgl. Mathekategorie funktioniert
+  - Note 2: zzgl. funktionsfähige Nutzung des externen Aufgabenservers
+  - Note 1: zzgl. Kategorie Notenlernen
 
+  
 ## Links
 - [KaTeX](https://github.com/KaTeX/KaTeX) 
 - [Web-Quiz](https://github.com/swsms/web-quiz-engine) 
-- [reines Javascript](https://htmldom.dev/)
 - [Fehlersuche - Stackoverflow](https://stackoverflow.com)
 
 
