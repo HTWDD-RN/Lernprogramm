@@ -41,8 +41,8 @@ folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinw
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
 - nutzen Sie in JS den strikten Modus 
-- der Beleg sollte im aktuellen Firefox oder Google Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
-- entsprechend einer PWA sollte sich die Anwendung auf einem Smartphone installieren und offline nutzen lassen
+- der Beleg sollte in den aktuellen Browsern Firefox und Google Chrome/Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
+- entsprechend einer PWA sollte sich die Anwendung auf einem PC/Smartphone installieren und offline nutzen lassen (PC-Installation funktioniert aktuell nur bei Chrome/Chromium)
 - man benötigt in einer PWA ein Manifest und einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation
 - verwenden Sie **keine** weiteren Frameworks wie jquery, Bootstrap etc., sondern nutzen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern (TypeScript ist für Entwickler mit Vorkenntnissen erlaubt)
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium oder Firefox
