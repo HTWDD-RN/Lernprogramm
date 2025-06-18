@@ -43,7 +43,7 @@ folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinw
 - nutzen Sie in JS den strikten Modus 
 - der Beleg sollte in den aktuellen Browsern Firefox und Google Chrome/Chromium lauffähig sein, es wird keine Abwärtskompatibilität erwartet
 - entsprechend einer PWA sollte sich die Anwendung auf einem PC/Smartphone installieren und offline nutzen lassen (PC-Installation funktioniert aktuell nur bei Chrome/Chromium)
-- man benötigt in einer PWA ein Manifest und einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation (dee Offline-Funktionsfähigkeit testen Sie mit den Entwicklertools von Chrome/Chromium - Application - Service workers - offline anklicken, danach muss sich die Seite neu laden lassen)
+- man benötigt in einer PWA ein Manifest und einen Service Worker zur Steuerung des Caches für den Offline-Betrieb und die Installation (die Offline-Funktionsfähigkeit testen Sie mit den Entwicklertools von Chrome/Chromium - Application - Service workers - offline anklicken, danach muss sich die Seite neu laden lassen)
 - verwenden Sie **keine** weiteren Frameworks wie jquery, Bootstrap etc., sondern nutzen Sie die Funktionalität von ECMAScript und CSS3 in den aktuellen Browsern (TypeScript ist für Entwickler mit Vorkenntnissen erlaubt)
 - Als Entwicklungsumgebung empfiehlt sich die Nutzung der Entwickertools im Browser Chromium oder Firefox
 - zum Testen der Funktionalität auf einem Smartphone kann die Device Toolbar in o.g. Entwickertools genutzt werden
