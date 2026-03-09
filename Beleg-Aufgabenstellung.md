@@ -19,6 +19,8 @@ Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascrip
 - dynamisches Nachladen von Inhalten mittels Ajax-Technik
 - Datenübertragung mittels JSON-Format
 - Nutzung einer REST-Schnittstelle mit vorgegebener API
+- Speicherung von Daten auf dem Server mittels PHP und SQLite
+
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
@@ -31,12 +33,15 @@ Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - der Beleg soll auf dem Webserver der HTW-Dresden bzw. der Fakultät Informatik abrufbar sein, Pfad: /~sxxxxx/Lernprogramm
 - Die Abgabe des Beleges erfolgt entsprechend [Abgabeformat](Beleg-Abgabeformat.md)
 
+
 ## Aufgabenkategorien
 folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinweise):
 - Internet-/ Webtechnologien
 - Mathematikaufgaben (rendern mittels JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX), siehe [Beispiel](mathe-demo.html))
+- Mathematikaufgaben mittels [Funktionsplot](https://mauriciopoppe.github.io/function-plot/)
 - Noten lernen (rendern mittels JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) / EasyScore)
 - Eingabe mittels virtuellen Piano-Keyboards statt der Auswahltasten für Noten lernen plus Ausgabe des Tons über Web Audio API (beliebige JS-Bibliothek)
+
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
