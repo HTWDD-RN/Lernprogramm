@@ -26,7 +26,7 @@ Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascrip
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
 - Wahl zwischen verschiedenen lokal gespeicherten Aufgabenkategorien:
   - lokale Text-Aufgaben aus JSON-File
-  - lokale Aufgaben unter Nutzung einer JS-Bibliothek (z.B. [KaTeX](https://github.com/KaTeX/KaTeX), [Funktionsplot](https://mauriciopoppe.github.io/function-plot/), [Vexflow](https://github.com/0xfe/vexflow))
+  - lokale Aufgaben unter Nutzung zweier JS-Bibliotheken (z.B. [KaTeX](https://github.com/KaTeX/KaTeX), [Funktionsplot](https://mauriciopoppe.github.io/function-plot/), [Vexflow](https://github.com/0xfe/vexflow))
   - Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers)
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten (zufällig zusammengestellt)
 - Anzeige des Lernfortschritts nach jeder Aufgabe mittels Progressbar
