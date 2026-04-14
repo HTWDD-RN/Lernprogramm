@@ -2,7 +2,7 @@
 
 ## Übersicht
 Wesentliche Aufgabe des Belegs ist die Erstellung eines  webbasierten Lernprogramms. Als Fundament nutzen wir die Technik der Progressive Web App (PWA).
-Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascript sowie einer Server-API. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
+Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascript, PHP sowie einer Server-API. Die Umsetzung als PWA ermöglicht auch die einfache und komfortable Nutzung in mobilen Geräten. 
 
 ## Lernaspekte des Beleges
 - Nutzung von HTTP/HTTPS
@@ -20,28 +20,21 @@ Der Beleg dient der praktischen Anwendung der Kenntnisse zu HTML, CSS, Javascrip
 - Datenübertragung mittels JSON-Format
 - Nutzung einer REST-Schnittstelle mit vorgegebener API
 - Speicherung von Daten auf dem Server mittels PHP und SQLite
-
+- Speicherung von Daten im lokalen Browserspeicher
 
 ## Beschreibung
 Das Lernprogramm soll mindestens folgende Funktionalität besitzen:
-- Wahl zwischen verschiedenen lokal gespeicherten Aufgabenkategorien 
-- eine Aufgabenkategorie, bei welcher die einzelnen Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers) geholt werden
+- Wahl zwischen verschiedenen lokal gespeicherten Aufgabenkategorien:
+  - lokale Text-Aufgaben aus JSON-File
+  - lokale Aufgaben unter Nutzung einer JS-Bibliothek (z.B. [KaTeX](https://github.com/KaTeX/KaTeX), [Funktionsplot](https://mauriciopoppe.github.io/function-plot/), [Vexflow](https://github.com/0xfe/vexflow))
+  - Aufgaben von einem bereitgestellten externen Server mittels [Ajax und REST-API](#rest-schnittstelle-des-externen-aufgabenservers)
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten (zufällig zusammengestellt)
 - Anzeige des Lernfortschritts nach jeder Aufgabe mittels Progressbar
 - Anzeige einer Statistik am Ende eines Durchlaufs
+- Speicherung der erreichten Punkte per PHP-Script auf dem Server
 - die Anzeige sollte sich an verschiedene Anzeigegeräte (PC-Browser, Tablet, Smartphone) sinnvoll anpassen (responsive Design)
 - der Beleg soll auf dem Webserver der HTW-Dresden bzw. der Fakultät Informatik abrufbar sein, Pfad: /~sxxxxx/Lernprogramm
 - Die Abgabe des Beleges erfolgt entsprechend [Abgabeformat](Beleg-Abgabeformat.md)
-
-
-## Aufgabenkategorien
-folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinweise):
-- Internet-/ Webtechnologien
-- Mathematikaufgaben (rendern mittels JS-Bibliothek [KaTeX](https://github.com/KaTeX/KaTeX), siehe [Beispiel](mathe-demo.html))
-- Mathematikaufgaben mittels [Funktionsplot](https://mauriciopoppe.github.io/function-plot/)
-- Noten lernen (rendern mittels JS-Bibliothek [Vexflow](https://github.com/0xfe/vexflow) / EasyScore)
-- Eingabe mittels virtuellen Piano-Keyboards statt der Auswahltasten für Noten lernen plus Ausgabe des Tons über Web Audio API (beliebige JS-Bibliothek)
-
 
 ## Technische Umsetzung
 - nutzen Sie für die Umsetzung HTML5/CSS3/JS 
@@ -98,7 +91,6 @@ folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinw
 - Erweiterung des Models um die Nutzung der angebotenen REST-Schnittstelle
 - Offlinefunktionalität implementieren
 
-
 ## Weitere Anforderungen
 - falls Sie ChatGPT u.ä. nutzen, müssen Sie dies dokumentieren und den erstellten Code erklären können
 - Dokumentation des Projektes, so dass eine andere Person ggf. am Projekt weiterarbeiten könnte
@@ -110,22 +102,20 @@ folgende Kategorien sind anzubieten, ja nach gewünschter [Note](#bewertungshinw
 - Wichtung der Aufgabenstellung anhand der bisherigen Ergebnisse
 - Erweiterung auf mögliche Mehrfachauswahl
 - zusätzliche Kategorie Notenlernen vorsehen (einzelne Note / Akkorde / Umkehrungen ganz nach Belieben / Klaviatur).
-- Speicherung der erreichten Punkte im Browserspeicher oder per PHP-Script auf dem Server
+- Web Audio API
 - Mehrnutzerbetrieb mit Nutzerauthentifizierung 
 
 ## Bewertungshinweise
 - eine grobe Orientierung für die Bewertung ist:
-  - Note 4: Programm funktioniert lt. Anforderung mit internen Mathematikaufgaben
+  - Note 4: Programm funktioniert lt. Anforderung mit einer JS-Bibliothek
   - Note 3: zzgl. funktionsfähige Nutzung des externen Aufgabenservers
-  - Note 2: zzgl. Kategorie Notenlernen
-  - Note 1: zzgl. Piano-Keyboard 
+  - Note 2: zzgl. Serverseite Highscore-Speicherung
+  - Note 1: zzgl. eigene Erweiterung nach individueller Absprache
 
-  
 ## Links
 - [KaTeX](https://github.com/KaTeX/KaTeX) 
 - [Web-Quiz](https://github.com/swsms/web-quiz-engine) 
 - [Fehlersuche - Stackoverflow](https://stackoverflow.com)
-
 
 ## Prinzipdarstellung
 Die Darstellung unten zeigt prinzipiell, wie der Beleg auf einem Smartphone aussehen könnte. Sie sind nicht an die Darstellung gebunden.
